@@ -8,20 +8,21 @@ public class Main {
         stack.push(14);
         stack.push(2168);
 
-        stack.sizeStack();
+        System.out.println("Tamanho da stack: " + stack.sizeStack());
+
+        System.out.println("A Stack está vazia? " + stack.isEmpty());
+
+        System.out.println("Ultimo elemento: " + stack.peek());
+
+        stack.pop();
+        stack.pop();
+        stack.pop();
+
+        System.out.println("Agora não deve ter mais elementos: " + stack.sizeStack());
         
-        stack.isEmpty();
-
-        stack.peek();
-
-        stack.pop();
-        stack.pop();
-        stack.pop();
-
-        stack.sizeStack();
+        System.out.println("A stack deve estar vazia(true): " +  stack.isEmpty());
         
-        stack.isEmpty();
-
-        stack.peek();
+        System.out.println("nÃO DEVE ter elementos: " + stack.peek());  //deve lançar uma exception, pois está sem elementos
+        
     }
 }

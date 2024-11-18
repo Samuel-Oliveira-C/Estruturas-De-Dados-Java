@@ -21,8 +21,8 @@ public class StackStructure {
     void pop(){
         this.element.removeLast();
     }
-    void peek(){
-        this.element.getLast();
+    int peek(){
+        return this.element.getLast();
     }
     boolean isEmpty(){
         int isEmpty = this.element.size();
