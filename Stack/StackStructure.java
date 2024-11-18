@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @pop: método que remove o ultimo elemento no stack
  * @peek: método que vai me dizer o ultimo elemento da stack
  * @isEmpty: método que vai me dizer se a stack está vazia ou não
- * @size: método que retorna a quantidade de elemento no stack.
+ * @sizeStack: método que retorna a quantidade de elemento no stack.
  */
 
 public class StackStructure {
