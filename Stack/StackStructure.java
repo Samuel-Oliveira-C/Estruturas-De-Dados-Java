@@ -2,7 +2,7 @@ package Stack;
 
 import java.util.ArrayList; 
 
-/*** A estrutura de dados Stack ela é LIFO(Last in first Out), ou seja o ultimo elemento a entrar é o primeiro a sair. 
+/*** A estrutura de dados Stack (Pilha) ela é LIFO(Last in first Out), ou seja o ultimo elemento a entrar é o primeiro a sair. 
  * O tipo que vou fazer é numérico
  * ela vai ter os seguintes metodos padrões:
  * @push: método que adiciona um novo item no stack
