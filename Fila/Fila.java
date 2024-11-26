@@ -21,12 +21,12 @@ public class Fila {
     void desenfileiramento (){
         fila.remove(0);
     }
-    void front(){
-        fila.get(0);
+    int front(){
+        return  fila.get(0);
     }
-    void rear(){
+    int rear(){
         int lastElement = fila.size();
-        fila.get(lastElement + 1);
+        return fila.get(lastElement - 1);
     }
     boolean isEmpty(){
         return fila.isEmpty();
