@@ -116,4 +116,26 @@ public class LinkedList {
         
         return node;
     }
+    public void removerElemento (LinkedList node, int posicao){
+        if (node == null || posicao < 1){
+            return;
+        }
+        if(posicao == 1){
+            LinkedList temp = node;
+            node = node.next;
+            temp = null;
+            return;
+        }
+        LinkedList atual = node;
+        for(int indice =1; indice < posicao - 1 &&  atual != null; indice++ ){
+            atual = atual.next;
+        }
+        if(atual == null || atual.next == null){
+            return;
+        }
+        LinkedList temp = atual.next;
+        atual.next = atual.next.next;
+
+        temp = null;
+    }
 }
