@@ -31,4 +31,37 @@ public class LinkedList {
         }
         return false;
     }
+    public int tamanhoLista(LinkedList node){
+        int length = 0;
+        LinkedList atual = node;
+
+        while (atual != null) {
+            length++;
+            atual = atual.next;
+        }
+        return length;
+    }
+    public LinkedList inserirNoInicio(LinkedList node, int elementoQueVaiInserir){
+        LinkedList novoValor = new LinkedList(elementoQueVaiInserir);
+        novoValor.next = node;
+
+        node = novoValor;
+
+        return node;
+    }
+    public LinkedList inserirNoFinal (LinkedList node, int elementoQueVaiInserir){
+        LinkedList nodes = new LinkedList(elementoQueVaiInserir);
+
+        if(node == null){
+            return nodes;
+        }
+        LinkedList atual = node;
+
+        while (atual.next != null) {
+            atual = atual.next;
+        }
+        atual.next= nodes;
+
+        return node;
+    }
 }
