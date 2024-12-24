@@ -92,4 +92,13 @@ public class LinkedList {
 
         return node;
     }
+    public LinkedList removerPrimeiroElemento (LinkedList node){
+        if(node == null){
+            return null;
+        }
+        LinkedList temp = node;
+        node = node.next;
+        return node;
+    }
+
 }
