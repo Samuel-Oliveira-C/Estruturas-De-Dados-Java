@@ -100,5 +100,20 @@ public class LinkedList {
         node = node.next;
         return node;
     }
-
+    public LinkedList removerUltimoElemento (LinkedList node){
+        if(node == null){
+            return null;
+        }
+        if(node.next == null){
+            node = null;
+            return null;
+        }
+        LinkedList penultimoElemento = node;
+        while (penultimoElemento.next.next != null) {
+            penultimoElemento = penultimoElemento.next ;
+        }
+        penultimoElemento.next = null;
+        
+        return node;
+    }
 }
